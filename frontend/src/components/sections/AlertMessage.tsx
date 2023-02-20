@@ -1,0 +1,11 @@
+import { Box, Alert, AlertIcon, AlertDescription } from "@chakra-ui/react";
+export default function AlertMessage({ message }: { message: string }) {
+    return (
+        <Box my={4}>
+            <Alert status="error" borderRadius={4}>
+                <AlertIcon />
+                <AlertDescription>{message}</AlertDescription>
+            </Alert>
+        </Box>
+    );
+}
